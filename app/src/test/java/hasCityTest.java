@@ -11,11 +11,11 @@ import java.util.ArrayList;
 public class hasCityTest {
     private CustomList list;
     @Before
-    void createCityList(){
+    public void createCityList(){
         list = new CustomList(null,new ArrayList<City>());
     }
     @Test
-    void testhasCity(){
+    public void testhasCity(){
         City city = new City("Regina", "Saskatchewan");
         assertFalse(list.hasCities(city));
     }
